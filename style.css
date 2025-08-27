@@ -1,93 +1,50 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-.top-banner-container {
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: 0;
-    margin-right: -50vw;
+body{
+    background-color: white;
+    color: black;
+    font-size: 100%;
+    font-family: Helvetica Neue, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-container{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.top-banner-container{
     background-color: #ed017f;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
 }
 
-.topmost-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  padding: 8px;
-  gap: 10px;
+.top-banner-image-container{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.topmost-container img {
-    max-width: 80px;
-    height: auto;
-    object-fit: contain;
-    cursor: pointer;
-    justify-content: space-between;
-}
-
-.header-container {
+.top-banner-image-wrapper{
+    display: block;
     width: 100%;
-    padding: 2px 20px;
-    background-color: #ed017f; /* Pink background */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+    position: relative;
 }
 
-.logo-container img{
-    max-width: 140px;
-    height: auto;
-    object-fit: contain;
-}
-
-.store-locator, .sell-on-konga {
-    font-family: Verdana, Tahoma, sans-serif;
-    color: #ffffff;
-    font-size: 14px;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 3px;
-    padding: 1px;
-    flex: 1px;
-    max-width: 400px;
-    margin: 5px;
-}
-
-.search-container input {
-    border: none;
-    outline: none;
+.top-banner-image-wrapper img{
     width: 100%;
-    padding: 1px;
-    font-size: 13px;
-    font-family: Arial, sans-serif;
-}
-
-.search-button {
-    background-color: #fba100;
-    border: none;
-    padding: 10px 12px;
-    cursor: pointer;
-    border-radius: 3px;
-    margin: 10px 20px;
-}
-
-.search-button img {
-    width: 10px;
-    height: 10px;
-    object-fit: contain;
-    vertical-align: middle;
+    height: auto;
+    display: block;
 }
 
